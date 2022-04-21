@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoFiguras</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=s	wap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/geoFiguras/styles/style.css">
+
+</head>
+<body>
+    <main>
+        <!-- Cuadrado -->
+        <section>
+            <h2>Cuadrado</h2>
+            <img class="figura_image" src="/geoFiguras/assets/images/cuadrado.png" alt="">
+            <form>                                
+                <label for="inputCuadrado">Ingresa un lado de tu Cuadrado</label>
+                <input id="inputCuadrado" type="number" />
+                <button type="button" onclick="calcularPerimetroCuadrado()">Calcula el Perimetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()">Calcula el Area</button>
+            </form>
+        </section>
+    
+        <!-- Triangulo -->
+        <section>
+            <h2>Triangulo</h2>
+            <img class="figura_image" src="/geoFiguras/assets/images/triangulo.png" alt="">
+            <form action="">                
+                <label for="inputTrianguloLado1">Ingresa un lado de tu Triangulo</label>
+                <input type="number" id="inputTrianguloLado1">                
+                <label for="inputTrianguloBase">Ingresa la base de tu Triangulo</label>
+                <input type="number" id="inputTrianguloBase">
+                
+                
+                <button type="button" onclick="calcularPerimetroTriangulo()">Calcula el Perimetro</button>
+                <button type="button" onclick="calcularAreaTriangulo()">Calcula el Area</button>    
+                <button type="button" onclick="calcularAlturaTriangulo()">Calcula la Altura</button>          
+            </form>
+        </section>
+    
+        <!-- Circulo -->
+        <section>
+            <h2>Circulo</h2>
+            <img class="figura_image" src="/geoFiguras/assets/images/circulo.png" alt="">
+            <form action="">
+                <label for="inputCirculoCircun">Ingresa el radio de tu Circulo</label>
+                <input type="number" id="inputCirculoCircun">
+                
+                <button type="button" onclick="calcularCircunferenciaCirculo()">Calcula la Circunferencia</button>
+                <button type="button" onclick="calcularAreaferenciaCirculo()">Calcula el Area</button>                          
+            </form>
+        </section>
+    </main>
+   
+    <script src="/geoFiguras/geo-figuras.js"></script>    
+</body>
+</html>

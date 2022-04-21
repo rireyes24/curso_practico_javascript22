@@ -1,0 +1,36 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main    
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+label
+{
+    display: block;
+}
+
+button
+{
+    display: block;
+}
+
+.figura_image
+{
+    width: 100px;
+}
